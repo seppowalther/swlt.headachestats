@@ -21,7 +21,9 @@ durchschnitt_stresspiegel = 0
 durchschnitt_gesamtstimmung = 0
 wetter = ['sonnig','bewoelkt','regnerisch','neblig']
 hoechsttemperatur = ['>35', '30-35', '20-30', '10-20', '5-10', '0-5', '<0']
-
-import pdb; pdb.set_trace()
+zeit_aussen = ['>3', '>2', '>1', '0-1', '0']
+sport = ['indoor', 'outdoor', 'no']
+getrunken = ['>3,5', '2,5-3,5', '2-2,5', '<2']
+medikamente = ['ibuprofen', 'paracetamol', 'aspirin', 'neuralgin']
 
 print(date)
