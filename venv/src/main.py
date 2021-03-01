@@ -3,6 +3,10 @@ from pandas_ods_reader import read_ods
 
 # defining data output path
 path = "output.ods"
+record = read_ods(path, 1)
+
+for column in record['Datensatz für folgenden Tag:']:
+    print(column)
 
 # Datensatz-Aufbereitung
 
