@@ -1,12 +1,24 @@
 import datetime
-from pandas_ods_reader import read_ods
 
-# defining data output path
+# ODS-Output Format
+"""
+from pandas_ods_reader import read_ods
 path = "output.ods"
 record = read_ods(path, 1)
 
 for column in record['Datensatz für folgenden Tag:']:
     print(column)
+"""
+
+# CSV-Output Format
+import csv
+testlist = []
+with open('output.csv', newline='') as csvfile:
+    test = csv.reader(csvfile, delimiter=' ', quotechar='|')
+    for row in test:
+        testlist.append(', '.join(row))
+    import pdb; pdb.set_trace()
+
 
 # Datensatz-Aufbereitung
 
