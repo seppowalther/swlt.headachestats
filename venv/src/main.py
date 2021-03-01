@@ -17,21 +17,21 @@ with open('output.csv', newline='') as csvfile:
     test = csv.reader(csvfile, delimiter=' ', quotechar='|')
     for row in test:
         testlist.append(', '.join(row))
-    import pdb; pdb.set_trace()
+
+testlist_splitted = testlist[3].split(',')
 
 
-# Datensatz-Aufbereitung
+# Datums-Aufbereitung
 
-tableoutput = "24.02.2021 20:39:22"
+tableoutput = testlist_splitted[5]
 splittet = tableoutput.split('.')
 
 day = splittet[0]
 month = splittet[1]
-year = (splittet[2].split(' '))[0]
-
+year = splittet[2]
 date = datetime.datetime(int(year), int(month), int(day))
 
-# Faktoren-IDs:
+# Filling factor-IDs:
 
 date = date
 hoehepunkt_kopfschmerz = 0
