@@ -34,11 +34,8 @@ date = datetime.datetime(int(year), int(month), int(day))
 """
 AVAILABLE factor-IDs:
 
-wetter = ['sonnig','bewoelkt','regnerisch','neblig']
-hoechsttemperatur = ['>35', '30-35', '20-30', '10-20', '5-10', '0-5', '<0']
 zeit_aussen = ['>3', '>2', '>1', '0-1', '0']
 sport = ['indoor', 'outdoor', 'no']
-getrunken = ['>3,5', '2,5-3,5', '2-2,5', '<2']
 medikamente = ['ibuprofen', 'paracetamol', 'aspirin', 'neuralgin']
 """
 
@@ -93,6 +90,7 @@ hoehepunkt_nackenschmerzen = 0
 durchschnitt_nackenschmerzen = 0
 durchschnitt_stresspiegel = testlist_splitted[3]
 durchschnitt_gesamtstimmung = testlist_splitted[4]
+hoechsttemperatur = hoechsttemperatur
 
 # Filling Data dictionary
 
@@ -104,6 +102,7 @@ owndatadict[date]["durchschnitt_gesamtstimmung"] = durchschnitt_gesamtstimmung
 owndatadict[date]["hoehepunkt_kopfschmerz"] = hoehepunkt_kopfschmerz
 owndatadict[date]["durchschnitt_kopfschmerz"] = durchschnitt_kopfschmerz
 owndatadict[date]["getrunken"] = getrunken
+owndatadict[date]["hoechsttemperatur"] = hoechsttemperatur
 
 
 import pdb; pdb.set_trace()
