@@ -80,6 +80,21 @@ elif testlist_splitted[14] == "Kühl":
 elif testlist_splitted[14] == "Kalt":
     hoechsttemperatur = '5-10'
 
+# Preparing zeit_aussen
+
+if testlist_splitted[17] == "über":
+    if testlist_splitted[18] == "3":
+        zeit_aussen = '>3'
+    elif testlist_splitted[18] == "2":
+        zeit_aussen = '>2'
+    elif testlist_splitted[18] == "1":
+        zeit_aussen = '>1'
+elif testlist_splitted[17] == "bis":
+    zeit_aussen = '0-1'
+elif testlist_splitted[17] == "Gar":
+    zeit_aussen = '0'
+
+
 # Filling factor-IDs:
 date = date
 wetter = wetter
@@ -91,6 +106,7 @@ durchschnitt_nackenschmerzen = 0
 durchschnitt_stresspiegel = testlist_splitted[3]
 durchschnitt_gesamtstimmung = testlist_splitted[4]
 hoechsttemperatur = hoechsttemperatur
+zeit_aussen = zeit_aussen
 
 # Filling Data dictionary
 
@@ -103,6 +119,7 @@ owndatadict[date]["hoehepunkt_kopfschmerz"] = hoehepunkt_kopfschmerz
 owndatadict[date]["durchschnitt_kopfschmerz"] = durchschnitt_kopfschmerz
 owndatadict[date]["getrunken"] = getrunken
 owndatadict[date]["hoechsttemperatur"] = hoechsttemperatur
+owndatadict[date]["zeit_aussen"] = zeit_aussen
 
 
 import pdb; pdb.set_trace()
