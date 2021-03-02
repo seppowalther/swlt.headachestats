@@ -43,6 +43,8 @@ medikamente = ['ibuprofen', 'paracetamol', 'aspirin', 'neuralgin']
 """
 
 # Preparing CSV-Output-factors for further data processing
+
+# Preparing wetter
 if testlist_splitted[2] == "Sonnig":
     wetter = 'sonnig'
 elif testlist_splitted[2] == "Bewölkt":
@@ -52,12 +54,29 @@ elif testlist_splitted[2] == "Regnerisch":
 elif testlist_splitted[2] == "Neblig":
     wetter = 'neblig'
 
+# Preparing getrunken
+if testlist_splitted[9] == '"Mehr':
+    getrunken = '>3,5'
+elif testlist_splitted[9] == '"Genug':
+    getrunken = '2,5-3,5'
+elif testlist_splitted[9] == '"Etwas':
+    getrunken = '2-2,5'
+elif testlist_splitted[9] == '"Viel':
+    getrunken = '<2'
 
 # Filling factor-IDs:
 date = date
+wetter = wetter
+getrunken = getrunken
 hoehepunkt_kopfschmerz = 0
 durchschnitt_kopfschmerz = 0
 hoehepunkt_nackenschmerzen = 0
 durchschnitt_nackenschmerzen = 0
-durchschnitt_stresspiegel = 0
+durchschnitt_stresspiegel = testlist_splitted[3]
 durchschnitt_gesamtstimmung = 0
+
+owndatasetlist = []
+owndatasetlist.append(date)
+owndatasetlist.append(wetter)
+
+import pdb; pdb.set_trace()
