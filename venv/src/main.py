@@ -64,20 +64,46 @@ elif testlist_splitted[9] == '"Etwas':
 elif testlist_splitted[9] == '"Viel':
     getrunken = '<2'
 
+# Preparing hoechsttemperatur
+
+if testlist_splitted[14] == "Extrem":
+    if testlist_splitted[15] == "warm":
+        hoechsttemperatur = '>35'
+    elif testlist_splitted[15] == "Kalt":
+        hoechsttemperatur = '<0'
+elif testlist_splitted[14] == "Sehr":
+    if testlist_splitted[15] == "warm":
+        hoechsttemperatur = '30-35'
+    elif testlist_splitted[15] == "kalt":
+        hoechsttemperatur = '0-5'
+elif testlist_splitted[14] == "Warm":
+    hoechsttemperatur = '20-30'
+elif testlist_splitted[14] == "Kühl":
+    hoechsttemperatur = '10-20'
+elif testlist_splitted[14] == "Kalt":
+    hoechsttemperatur = '5-10'
+
 # Filling factor-IDs:
 date = date
 wetter = wetter
 getrunken = getrunken
-hoehepunkt_kopfschmerz = 0
-durchschnitt_kopfschmerz = 0
+hoehepunkt_kopfschmerz = testlist_splitted[6]
+durchschnitt_kopfschmerz = testlist_splitted[7]
 hoehepunkt_nackenschmerzen = 0
 durchschnitt_nackenschmerzen = 0
 durchschnitt_stresspiegel = testlist_splitted[3]
-durchschnitt_gesamtstimmung = 0
+durchschnitt_gesamtstimmung = testlist_splitted[4]
+
+# Filling Data dictionary
 
 owndatadict = dict()
 owndatadict[date] = {}
 owndatadict[date]["wetter"] = wetter
-owndatadict[date]["durchschnitt_stresspiegel"] = testlist_splitted[3]
+owndatadict[date]["durchschnitt_stresspiegel"] = durchschnitt_stresspiegel
+owndatadict[date]["durchschnitt_gesamtstimmung"] = durchschnitt_gesamtstimmung
+owndatadict[date]["hoehepunkt_kopfschmerz"] = hoehepunkt_kopfschmerz
+owndatadict[date]["durchschnitt_kopfschmerz"] = durchschnitt_kopfschmerz
+owndatadict[date]["getrunken"] = getrunken
+
 
 import pdb; pdb.set_trace()
