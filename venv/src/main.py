@@ -75,8 +75,9 @@ durchschnitt_nackenschmerzen = 0
 durchschnitt_stresspiegel = testlist_splitted[3]
 durchschnitt_gesamtstimmung = 0
 
-owndatasetlist = []
-owndatasetlist.append(date)
-owndatasetlist.append(wetter)
+owndatadict = dict()
+owndatadict[date] = {}
+owndatadict[date]["wetter"] = wetter
+owndatadict[date]["durchschnitt_stresspiegel"] = testlist_splitted[3]
 
 import pdb; pdb.set_trace()
