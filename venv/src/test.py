@@ -1,4 +1,4 @@
-from pyexcel_xlsx import get_data#
+from pyexcel_xlsx import get_data
 from bson import json_util
 import json
 
