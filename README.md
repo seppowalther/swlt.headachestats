@@ -1,6 +1,6 @@
 # swlt.headachestats
 
-!Work in progress!
+###### !Work in progress!
 
 To find out more about your headache, it's often useful to record your symptoms for quite some time.
 
