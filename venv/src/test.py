@@ -15,13 +15,13 @@ dataset = alldata[1]
 
 owndatadict = dict()
 owndatadict[dataset[1]] = dataset[1]
-#owndatadict[date]["wetter"]
-#owndatadict[date]["durchschnitt_stresspiegel"]
-#owndatadict[date]["durchschnitt_gesamtstimmung"]
-#owndatadict[date]["hoehepunkt_kopfschmerz"]
-#owndatadict[date]["durchschnitt_kopfschmerz"]
-#owndatadict[date]["getrunken"]
-#owndatadict[date]["hoechsttemperatur"]
-#owndatadict[date]["zeit_aussen"]
+owndatadict[dataset[1]]["wetter"]
+#owndatadict[dataset[1]]["durchschnitt_stresspiegel"]
+#owndatadict[dataset[1]]["durchschnitt_gesamtstimmung"]
+#owndatadict[dataset[1]]["hoehepunkt_kopfschmerz"]
+#owndatadict[dataset[1]]["durchschnitt_kopfschmerz"]
+#owndatadict[dataset[1]]["getrunken"]
+#owndatadict[dataset[1]]["hoechsttemperatur"]
+#owndatadict[dataset[1]]["zeit_aussen"]
 
 import pdb; pdb.set_trace()
