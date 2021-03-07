@@ -17,7 +17,9 @@ owndatadict = dict()
 owndatadict[dataset[1]] = {}
 owndatadict[dataset[1]]["date"] = dataset[1]
 owndatadict[dataset[1]]["hoehepunkt_kopfschmerz"] = dataset[2]
-#owndatadict[dataset[1]]["durchschnitt_kopfschmerz"] = dataset[3]
+owndatadict[dataset[1]]["durchschnitt_kopfschmerz"] = dataset[3]
+owndatadict[dataset[1]]["hoehepunkt_nackenschmerz"] = dataset[4]
+owndatadict[dataset[1]]["durchschnitt_nackenschmerz"] = dataset[5]
 #owndatadict[dataset[1]]["wetter"] =
 #owndatadict[dataset[1]]["durchschnitt_stresspiegel"]
 #owndatadict[dataset[1]]["durchschnitt_gesamtstimmung"]
