@@ -1,5 +1,7 @@
 # swlt.headachestats
 
+!Work in progress!
+
 To find out more about your headache, it's often useful to record your symptoms for quite some time.
 
 I came up with the idea of developing my own "headache analyzer", because my girlfriend is often suffering from severe migraine issues, and me as a guy who is very interested in medicine and pharmacy wants to find out more about the reasons to be able to predict when pain will occur to be able to treat the causes even before any pain kicks in.
