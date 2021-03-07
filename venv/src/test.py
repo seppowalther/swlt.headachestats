@@ -1,11 +1,8 @@
-# CSV-Output Format
-import csv
-testlist = []
-with open('output.csv', newline='') as csvfile:
-    test = csv.reader(csvfile, delimiter=' ', quotechar='|')
-    for row in test:
-        testlist.append(', '.join(row))
+from pyexcel_xlsx import get_data#
+from bson import json_util
+import json
 
-testlist_splitted = testlist[3].split(',')
+data = get_data("output2.xlsx")
+dataprinting = json.dumps(data, indent=4, default=json_util.default)
 
-import pdb; pdb.set_trace()
+print(dataprinting)
