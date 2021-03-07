@@ -9,12 +9,12 @@ print(datapriting)
 """
 
 alldata = data["Formularantworten 1"]
-print(alldata[1])
+dataset = alldata[1]
 
 # Filling factor-IDs:
 
 owndatadict = dict()
-#owndatadict[date]
+owndatadict["date"] = dataset[1]
 #owndatadict[date]["wetter"]
 #owndatadict[date]["durchschnitt_stresspiegel"]
 #owndatadict[date]["durchschnitt_gesamtstimmung"]
@@ -24,4 +24,4 @@ owndatadict = dict()
 #owndatadict[date]["hoechsttemperatur"]
 #owndatadict[date]["zeit_aussen"]
 
-#import pdb; pdb.set_trace()
+import pdb; pdb.set_trace()
