@@ -20,11 +20,11 @@ owndatadict[dataset[1]]["hoehepunkt_kopfschmerz"] = dataset[2]
 owndatadict[dataset[1]]["durchschnitt_kopfschmerz"] = dataset[3]
 owndatadict[dataset[1]]["hoehepunkt_nackenschmerz"] = dataset[4]
 owndatadict[dataset[1]]["durchschnitt_nackenschmerz"] = dataset[5]
-#owndatadict[dataset[1]]["wetter"] =
-#owndatadict[dataset[1]]["durchschnitt_stresspiegel"]
-#owndatadict[dataset[1]]["durchschnitt_gesamtstimmung"]
+owndatadict[dataset[1]]["durchschnitt_stresspiegel"] = dataset[6]
+owndatadict[dataset[1]]["durchschnitt_gesamtstimmung"] = dataset[7]
+owndatadict[dataset[1]]["wetter"] = dataset[8]
+owndatadict[dataset[1]]["hoechsttemperatur"] = dataset[9]
 #owndatadict[dataset[1]]["getrunken"]
-#owndatadict[dataset[1]]["hoechsttemperatur"]
 #owndatadict[dataset[1]]["zeit_aussen"]
 
 import pdb; pdb.set_trace()
