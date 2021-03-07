@@ -14,7 +14,7 @@ dataset = alldata[1]
 # Filling factor-IDs:
 
 owndatadict = dict()
-owndatadict["date"] = dataset[1]
+owndatadict[dataset[1]] = dataset[1]
 #owndatadict[date]["wetter"]
 #owndatadict[date]["durchschnitt_stresspiegel"]
 #owndatadict[date]["durchschnitt_gesamtstimmung"]
