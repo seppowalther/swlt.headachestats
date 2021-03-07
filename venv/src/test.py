@@ -8,18 +8,20 @@ dataprinting = json.dumps(data, indent=4, default=json_util.default)
 print(datapriting)
 """
 
-# Filling factor-IDs:
-"""
-owndatadict = dict()
-owndatadict[date]
-owndatadict[date]["wetter"]
-owndatadict[date]["durchschnitt_stresspiegel"]
-owndatadict[date]["durchschnitt_gesamtstimmung"]
-owndatadict[date]["hoehepunkt_kopfschmerz"]
-owndatadict[date]["durchschnitt_kopfschmerz"]
-owndatadict[date]["getrunken"]
-owndatadict[date]["hoechsttemperatur"]
-owndatadict[date]["zeit_aussen"]
-"""
+alldata = data["Formularantworten 1"]
+print(alldata[1])
 
-import pdb; pdb.set_trace()
+# Filling factor-IDs:
+
+owndatadict = dict()
+#owndatadict[date]
+#owndatadict[date]["wetter"]
+#owndatadict[date]["durchschnitt_stresspiegel"]
+#owndatadict[date]["durchschnitt_gesamtstimmung"]
+#owndatadict[date]["hoehepunkt_kopfschmerz"]
+#owndatadict[date]["durchschnitt_kopfschmerz"]
+#owndatadict[date]["getrunken"]
+#owndatadict[date]["hoechsttemperatur"]
+#owndatadict[date]["zeit_aussen"]
+
+#import pdb; pdb.set_trace()
