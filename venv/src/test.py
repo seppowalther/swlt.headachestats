@@ -24,7 +24,13 @@ owndatadict[dataset[1]]["durchschnitt_stresspiegel"] = dataset[6]
 owndatadict[dataset[1]]["durchschnitt_gesamtstimmung"] = dataset[7]
 owndatadict[dataset[1]]["wetter"] = dataset[8]
 owndatadict[dataset[1]]["hoechsttemperatur"] = dataset[9]
-#owndatadict[dataset[1]]["getrunken"]
-#owndatadict[dataset[1]]["zeit_aussen"]
+owndatadict[dataset[1]]["zeit_aussen"] = dataset[10]
+owndatadict[dataset[1]]["sport"] = dataset[11]
+owndatadict[dataset[1]]["getrunken"] = dataset[12]
+owndatadict[dataset[1]]["medikamente"] = dataset[13]
+
+# check if Anmerkung field is filled, if yes, add to owndatadict
+if 14 in dataset:
+    owndatadict[dataset[1]]["anmerkung"] = dataset[14]
 
 import pdb; pdb.set_trace()
